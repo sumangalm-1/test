@@ -1,0 +1,25 @@
+---
+kind: pipeline
+type: docker
+name: default
+
+platform:
+  os: linux
+  arch: ppc64le
+
+clone:
+  disable: true
+
+steps:
+- name: clone
+  commands:
+  - git clone https://github.com/snehakpersistent/test-project.git .
+
+- name: greeting
+  image: ubuntu:latest
+  commands:
+  - echo hello
+
+trigger:
+  branch:
+  - main
