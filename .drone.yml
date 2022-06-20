@@ -3,9 +3,7 @@ kind: pipeline
 type: docker
 name: default
 
-platform:
-  os: linux
-  arch: ppc64le
+
 
 clone:
   disable: true
