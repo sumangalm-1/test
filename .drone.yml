@@ -8,8 +8,8 @@ platform:
   arch: ppc64le
 
 steps:
-- name: backend
-  image: golang
+- name: frontend
+  image: node
   commands:
-  - go build
-  - go test
+  - npm install
+  - npm run test
