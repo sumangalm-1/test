@@ -11,5 +11,4 @@ steps:
 - name: frontend
   image: node
   commands:
-  - npm install
-  - npm run test
+  echo " npm installed"
