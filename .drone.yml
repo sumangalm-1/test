@@ -3,7 +3,9 @@ kind: pipeline
 type: docker
 name: default
 
-
+platform:
+  os: linux
+  arch: ppc64le
 
 clone:
   disable: true
@@ -11,7 +13,7 @@ clone:
 steps:
 - name: clone
   commands:
-  - git clone https://github.com/snehakpersistent/test-project.git .
+  - git clone https://github.com/sumangalm-1/test.git .
 
 - name: greeting
   image: ubuntu:latest
