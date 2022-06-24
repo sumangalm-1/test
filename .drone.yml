@@ -7,17 +7,11 @@ platform:
   os: linux
   arch: ppc64le
 
-
-
 steps:
 - name: clone
   commands:
   - git clone https://github.com/sumangalm-1/test.git .
 
-- name: greeting
-  image: ubuntu:latest
-  commands:
-  - echo hello
 
 trigger:
   branch:
